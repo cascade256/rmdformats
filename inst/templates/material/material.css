@@ -295,3 +295,7 @@ table .panel-body {
 .table td {
   padding: 8px 15px;
 }
+
+.mathDiv {
+  overflow-x: auto;
+}

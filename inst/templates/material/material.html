@@ -158,8 +158,10 @@ $endfor$
 <script>
 $$(document).ready(function () {
   // add bootstrap table styles to pandoc tables
-  $$('tr.header').parent('thead').parent('table').addClass('table table-striped table-hover');
-
+  $$('tr.header').parent('thead').parent('table').addClass('table-striped table-hover').wrap("<div class='table'></div>");
+  
+  $$('.math').wrap("<div class='mathDiv'></div>");
+  
   $if(thumbnails)$
   var images = $$('.pages img');
   images.filter(function() {
